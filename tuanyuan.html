@@ -44,14 +44,23 @@
   </head>
 
   <body>
-    <p>
-      亲爱的家人们
-      ：</p>
-    <p>
-      明月寄相思，愿这封信能将我的思念和祝福传递给你们。愿你们中秋快乐，身体健康，事事顺遂。希望在不久的将来，我们能一同欢度下一个中秋佳节。
-    </p>
-    <p style="text-align: right">闲鱼</p>
-    <p style="text-align: right">2024/9/16</p>
-    
+    <a>同心圆</a>
+    <p>import turtle</p>
+    <p>n=int(input("输入圆的个数:"))</p>
+    <p>bangjing=25</p>
+    <p>jianju=10#一个常量</p>
+    <p>sudu=0</p>
+    <p>turtle.speed(sudu)#绘制速度</p>
+    <p>turtle.hideturtle()#隐藏光标</p>
+    <p>a=bangjing</p>
+    <p>for count in range(n):</p>
+    <p style="text-indent:2em;"> turtle.circle(a)#半径</p>
+    <p style="text-indent:2em;">x=turtle.xcor()#目前光标的x位置</p>
+    <p style="text-indent:2em;">y=turtle.ycor()-jianju#调整目前光标的位置</p>
+    <p style="text-indent:2em;">a=a+jianju#调正半径</p>
+    <p style="text-indent:2em;">turtle.penup()#提笔</p>
+    <p style="text-indent:2em;">turtle.goto(x,y)#调整画笔位置</p>
+    <p style="text-indent:2em;">turtle.pendown()#落笔</p>
+    <p>turtle.done()</p>
   </body>
 </html>
